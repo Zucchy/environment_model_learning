@@ -4,7 +4,7 @@
 
 ## Description
 
-This is the code used to run a single execution of the algorithms MCP_Real (MCP_R), MCP_Mix (MCP_M) and MCP_Select (MCP_S). 
+This is the code used to run a single execution of the algorithms MCP_Real (MCP_R), MCP_Mix (MCP_M) and MCP_Select (MCP_S). The environment learning techniques were first presented in "Online model adaptation in Monte Carlo tree search planning" by Maddalena Zuccotto, Edoardo Fusa, Alberto Castellini and Alessandro Farinelli. 
 To run the single algorithms follow the instructions below.
 
 
