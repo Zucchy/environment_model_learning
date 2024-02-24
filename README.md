@@ -1,12 +1,11 @@
-# Supplementary
+# Online Model Adaptation in Monte Carlo Tree Search Planning
 
 
 
 ## Description
-**--- Online Model Adaptation in Monte Carlo Tree Search Planning ---**
 
 This is the code used to run a single execution of the algorithms MCP_Real (MCP_R), MCP_Mix (MCP_M) and MCP_Select (MCP_S). 
-To run the single algorithms follow the instruction below.
+To run the single algorithms follow the instructions below.
 
 
 ## Installation
