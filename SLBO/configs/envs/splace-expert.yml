@@ -1,0 +1,43 @@
+#
+# Online Model Adaptation in Monte Carlo Tree Search Planning
+#
+# This file is part of free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# It is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with the code.  If not, see <http://www.gnu.org/licenses/>.
+#
+test_runner_n_envs: 1
+collect_runner_n_envs: 1
+dev_runner_n_envs: 1
+
+log_dir: 'slbo_logs/expert/'
+seed: 7521
+
+env:
+  id: SafePlace
+  room: 'None'  # ignore this variable in expert environment
+  all_rooms: False
+  expert: True
+  reproducibility: False  # if `expert` is True this variable will be overwritten to False
+plan:
+  max_steps: 12
+  n_trpo_samples: 3000
+  n_envs: 250
+  # `n_envs` = `n_trpo_samples` / `max_steps` (number of virtual envs)
+  # assert `n_envs` == train_runner_n_envs`
+runner:
+  max_steps: 120
+rollout:
+  n_train_samples: 120
+  n_test_samples: 5000
+  # `n_train_samples` and `n_test_samples` must be divisible by their corresponding `n_envs` value
+  # In the current settings `n_train_samples` would be divided by `collect_runner_n_envs` and
+  # `n_test_samples` by `test_runner_n_envs` and `n_envs`

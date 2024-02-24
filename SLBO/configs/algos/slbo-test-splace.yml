@@ -1,0 +1,28 @@
+#
+# Online Model Adaptation in Monte Carlo Tree Search Planning
+#
+# This file is part of free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# It is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with the code.  If not, see <http://www.gnu.org/licenses/>.
+#
+model:
+  multi_step: 2          # how many steps/transitions consider at the same time for the training of the virtual dynamics
+  train_batch_size: 128  # batch_size used during the training of the virtual dynamics model
+slbo:
+  n_stages: 5          # number of days
+  n_iters: 1           # inner loop of training virtual dynamics model and policy
+  n_model_iters: 1     # times the training of the virtual dynamics is executed in a single iteration of the loop
+  n_policy_iters: 1    # times the training of the policy is executed in a single iteration of the loop
+TRPO:
+  ent_coef: 0.005
+ckpt:
+  model_load: '../logs_expert/final.npy'

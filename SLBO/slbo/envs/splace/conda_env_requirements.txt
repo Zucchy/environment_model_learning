@@ -1,0 +1,17 @@
+- tf-2.5.2
+conda create --name tf-2.5.2 python=3.9
+conda activate tf-2.5.2
+pip install tensorflow==2.5.2 numpy==1.19.3 pandas==1.4.4 execnet matplotlib SciencePlots scipy
+
+-slbo
+conda create --name slbo python=3.6
+conda activate slbo
+pip install tensorflow==1.13.1 ???
+pip install tensorflow-gpu==1.13.1 ???
+pip install gym==0.7.4
+pip install baselines==0.1.5
+pip install pyyaml==5.1 termcolor==1.1.0 mujoco-py==0.5.7 json_tricks==3.13.1
+
+scaricare mjpro131 e la sua key license
+
+SLBO started at 18:48:10 and finished at 19:32:57 (~45 min)
