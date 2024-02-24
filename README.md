@@ -169,4 +169,4 @@ In `step_stats` going into subfolders you will find 100 .csv files, one per day.
 M. Zuccotto, E. Fusa, A. Castellini, and A. Farinelli. "Online model adaptation in Monte Carlo tree search planning". (Submitted)
 
 # Contacts
-For any information/bugfix/issue contact Edoardo Fusa (main developer) at edoardo.fusa@gmail.com
+For any information/bugfix/issue contact Edoardo Fusa at edoardo.fusa@gmail.com
